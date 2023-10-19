@@ -1,0 +1,7 @@
+{
+  "name": "brands-fetch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
