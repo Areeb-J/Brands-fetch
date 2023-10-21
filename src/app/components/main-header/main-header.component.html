@@ -1,0 +1,46 @@
+<ion-toolbar class="toolbar">
+  <ion-buttons slot="start" *ngIf="isMobileView" slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <div>
+    <img style="height: 62px;margin-top: 8px;margin-bottom: 8px;margin-left: 8px;margin-right: 8px;" src="../../../assets/logo.png"/>
+  </div>
+  <ion-buttons slot="end" class="only-desktop">
+    <ion-button class="text-button">
+      Shoes
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="end" class="only-desktop">
+    <ion-button class="text-button">
+      Cloths
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="end" class="only-desktop">
+    <ion-button class="text-button">
+      Watch
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="end" class="only-desktop">
+    <ion-button class="text-button">
+      Jewellery
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="end" class="only-desktop">
+    <ion-button class="text-button">
+      Accessories
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <form slot="end" class="only-desktop" [formGroup]="filterContentForm" (ngSubmit)="onSearch(filterContentForm.value.searchBy)">
+    <ion-item style="color: #7d7d7d;" class="ion-margin-horizontal search">
+      <ion-input type="text" formControlName="searchBy" placeholder="Search..." clearInput></ion-input>
+      <div class="search-button">
+        <img src="assets/search.png" alt="Search button" (click)="onSearch(filterContentForm.value.searchBy)" />
+      </div>
+    </ion-item>
+  </form>
+</ion-toolbar>

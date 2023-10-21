@@ -24,3 +24,34 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+/* CSS for Swiper */
+@import "swiper/scss";
+@import "@ionic/angular/css/ionic-swiper";
+
+/* Global CSS */
+ion-content{
+    --background: #ffffff;
+}
+
+html {
+    font-size: 14px;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: black;
+}
+
+.native-input{
+    margin-right: 16px !important;
+}
+
